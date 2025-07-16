@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedidos Online - Bokados</title>
+  <link rel="stylesheet" href="pedidos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+  <div class="navbar-container">
+    <div class="navbar-logo">
+      <a href="index.html">
+        <img src="OFICIAL LOGO.png" alt="Logo Bokados" />
+      </a>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
+      <li><a href="pedidos.html">Pedidos Online</a></li>
+    
+    
+    </ul>
+    <div class="navbar-actions">
+      <a href="#"><i class="fas fa-bell"></i></a>
+      <a href="singin.html" class="signin-button">Sign In</a>
+      <a href="#" class="order-now">Order Now</a>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+ <!-- NAVBAR QUEDAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+
+
+
+
+
+
+  <!-- HERO -->
+  <section id="hero"></section>
+
+  <section id="intro">
+  <div class="intro-container">
+    <div class="intro-images">
+      <img src="pedircomida.png" alt="Imagen 1">
+      <img src="pedirocmida.png" alt="Imagen 2">
+    </div>
+
+    <div class="intro-text">
+      <h2>¡Pedir nunca fue tan fácil!</h2>
+      <p>
+        En Bokados queremos que disfrutes del mundo sin moverte de tu casa. 
+        Elige tu plato favorito, completa el formulario o escríbenos por WhatsApp. ¡Así de fácil!
+      </p>
+      <!-- 👇 NUEVA IMAGEN SOLO EN EL CENTRO 👇 -->
+      <div class="intro-extra-image">
+        <img src="pedirabajo.png" alt="Imagen extra">
+      </div>
+    </div>
+
+    <div class="intro-video">
+      <video controls autoplay muted loop>
+        <source src="pedir.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</section>
+
+
+
+  <section id="formulario">
+  <h2>Realiza tu Pedido</h2>
+  <p>Completa tus datos para coordinar tu pedido. Te contactaremos a la brevedad.</p>
+
+  <div class="formulario-container">
+    <!-- Video izquierda -->
+    <div class="video-side">
+      <video controls autoplay muted loop>
+        <source src="relializavideo.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- Formulario con fondo visible -->
+    <div class="formulario-box">
+      <form>
+        <label for="nombre">Nombre completo *</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="telefono">Teléfono / WhatsApp *</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="direccion">Dirección de entrega (opcional)</label>
+        <input type="text" id="direccion" name="direccion">
+
+        <label for="fecha">Fecha y hora deseadas (opcional)</label>
+        <input type="datetime-local" id="fecha" name="fecha">
+
+        <label for="pedido">Tu pedido o mensaje *</label>
+        <textarea id="pedido" name="pedido" required></textarea>
+
+        <button type="submit" class="btn">Enviar Pedido</button>
+        <p class="privacidad">*Tus datos están seguros con nosotros. Solo los usamos para tu pedido.</p>
+      </form>
+    </div>
+
+    <!-- Video derecha -->
+    <div class="video-side">
+      <video controls autoplay muted loop>
+        <source src="realizavideo.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+  <section id="whatsapp">
+  <div class="whatsapp-container">
+    <div class="whatsapp-image">
+      <img src="prefieresrapido.png" alt="Promo WhatsApp">
+    </div>
+    <div class="whatsapp-content">
+      <h2>¿Prefieres algo más rápido?</h2>
+      <p>Haz clic y habla directamente con nosotros.</p>
+      <a href="https://wa.me/51999999999" class="btn">Pide por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+
+ <section id="horario">
+  <div class="horario-overlay">
+    <h2>Nuestros Horarios</h2>
+    <p>Lunes a Sábado: 12:00 p.m. – 10:00 p.m.</p>
+    <p>Domingos y feriados: 1:00 p.m. – 9:00 p.m.</p>
+    <p>¡Estamos listos para atenderte!</p>
+  </div>
+</section>
+
+
+  <!-- DIRECCIÓN Y MAPA -->
+ <section id="direccion">
+  <div class="direccion-texto">
+    <h2>Visítanos o recíbelo en casa</h2>
+    <p>Av. Los Sabores 123, Centro, Moquegua, Perú.</p>
+    <p>También puedes visitarnos y vivir la experiencia Bokados.</p>
+  </div>
+
+  <div class="direccion-contenido">
+    <div class="direccion-imagen">
+      <img src="DINDE NODENDOCTRAMOS.png" alt="Imagen local Bokados">
+    </div>
+<!-- MAPA DE GOOGLE AL OTRO COSTADO -->
+    <div class="direccion-mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.8796352179816!2d-71.32720128659618!3d-17.661717664187336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91445a5445ee6177%3A0xec315f36bf1de03f!2sInstituto%20Tecnol%C3%B3gico%20Luis%20E.%20Valc%C3%A1rcel!5e0!3m2!1ses-419!2spe!4v1752508254775!5m2!1ses-419!2spe"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+  <!-- CTA FINAL -->
+  <section id="cta-final">
+    <h2>¡No esperes más para saborear el mundo!</h2>
+    <a href="#" class="btn">Haz tu Pedido</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-column">
+        <h3>Sobre Bokados</h3>
+        <ul>
+          <li><a href="#">Nuestra Historia</a></li>
+          <li><a href="#">Nuestra Filosofía</a></li>
+          <li><a href="#">Equipo Bokados</a></li>
+          <li><a href="#">Ubicaciones</a></li>
+          <li><a href="#">Blog / Novedades</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Explora</h3>
+        <ul>
+          <li><a href="#">Menú</a></li>
+          <li><a href="#">Pedidos Online</a></li>
+          <li><a href="#">Tarjetas de Regalo</a></li>
+          <li><a href="#">Eventos Privados</a></li>
+          <li><a href="#">Catering Corporativo</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Ayuda y Contacto</h3>
+        <ul>
+          <li><a href="#">Centro de Ayuda</a></li>
+          <li><a href="#">Reservas</a></li>
+          <li><a href="#">Preguntas Frecuentes (FAQ)</a></li>
+          <li><a href="#">Trabaja con Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Descarga Nuestra App</h3>
+        <div class="app-badges">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+        </div>
+
+        <h3>Únete a Nuestro Newsletter</h3>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Tu email" required>
+          <button type="submit">Suscribirse</button>
+        </form>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Bokados. Todos los derechos reservados.</p>
+      <p>Contacto: WhatsApp +51 999 999 999 | Email: contacto@bokados.com</p>
+    </div>
+  </footer>
+
+</body>
+</html>

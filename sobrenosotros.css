@@ -1,0 +1,490 @@
+/* ----------------------------------------
+   NAVBAR NUEVO ESTILO SHAKE SHACK
+---------------------------------------- */
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 0.5em 1em;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo img {
+  height: 60px;
+  width: auto;
+  border-radius: 8px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  color: #212121;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #B71C1C;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.navbar-actions i {
+  font-size: 1.4em;
+  color: #212121;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-actions i:hover {
+  color: #B71C1C;
+}
+
+.signin-button {
+  padding: 0.5em 1em;
+  border: 2px solid #B71C1C;
+  border-radius: 25px;
+  color: #B71C1C;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.signin-button:hover {
+  background-color: #B71C1C;
+  color: #ffffff;
+}
+
+.order-now {
+  padding: 0.5em 1.2em;
+  background-color: #eb3119;
+  color: #ffffff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.order-now:hover {
+  background-color: #ec1c15;
+}
+
+/* ----------------------------------------
+  SECCION DE NAVEGACIONNNNNNNNNNN DE AQUI HASTA ARRRRIBAAAAAA
+---------------------------------------- */
+
+
+
+/* ----------------------------------------
+   BOTONES GENERALES
+---------------------------------------- */
+.btn {
+  display: inline-block;
+  background-color: #B71C1C;
+  color: #FFFFFF;
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #FBC02D;
+  color: #212121;
+}
+
+/* ----------------------------------------
+   HERO
+---------------------------------------- */
+#hero {
+  background: url('OFICALPORTADA.png') center/contain no-repeat;
+  background-color: #000; /* Fallback para márgenes */
+  background-size: contain;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/* ----------------------------------------
+   SECTIONS
+---------------------------------------- */
+section {
+  padding: 4em 1em;
+  max-width: 1200px;
+  margin: auto;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #B71C1C;
+  font-size: 2em;
+}
+
+/* ---------------------------------------- 
+   NUESTRA HISTORIA
+---------------------------------------- */
+#historia {
+  padding: 4em 2em;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+#historia h2 {
+  font-size: 2.5em;
+  color: #B71C1C;
+  margin-bottom: 1em;
+}
+
+.historia-texto {
+  max-width: 100%;
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 2em;
+  text-align: center;
+  color: #333;
+  padding: 0 1em;
+}
+
+.historia-galeria {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.historia-galeria img {
+  width: 30%;
+  max-width: 380px;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.historia-galeria img:hover {
+  transform: scale(1.03);
+}
+
+
+/* ----------------------------------------
+   NUESTRA FILOSOFÍA
+---------------------------------------- */
+#filosofia {
+  background-color: #FBE9E7;
+  padding: 4em 1em;
+  max-width: 1200px;
+  margin: 4em auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#filosofia h2 {
+  color: #B71C1C;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+
+.filosofia-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.filosofia-contenedor img {
+  flex: 1 1 250px;
+  max-width: 300px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.filosofia-contenedor img:hover {
+  transform: scale(1.05);
+}
+
+.filosofia-texto {
+  flex: 1 1 300px;
+  max-width: 400px;
+  text-align: center;
+  color: #212121;
+  line-height: 1.8;
+  font-size: 1.05em;
+}
+
+.filosofia-texto p {
+  margin: 0.5em 0;
+}
+
+.filosofia-texto .frase-final {
+  margin-top: 1.5em;
+  font-size: 1.2em;
+  color: #B71C1C;
+  font-weight: bold;
+}
+
+/* ----------------------------------------
+   SABORES DEL MUNDO
+---------------------------------------- */
+#sabores {
+  background-color: #FFF8E1;
+}
+
+#sabores .intro {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin: 0.5em 0;
+  color: #B71C1C;
+}
+
+.card p {
+  padding: 0 1em 1em;
+}
+
+/* ----------------------------------------
+   NUESTRO EQUIPO
+---------------------------------------- */
+#equipo {
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+#equipo .frase {
+  margin-bottom: 2em;
+  color: #212121;
+  font-style: italic;
+}
+
+.team-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.team-gallery img {
+  border-radius: 10px;
+  width: 350px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ----------------------------------------
+   VALORES / MISIÓN / VISIÓN
+---------------------------------------- */
+#valores {
+  position: relative;
+  background: url('visoion.png') center/cover no-repeat;
+  color: #FFFFFF;
+  padding: 4em 1em;
+  max-width: 100%;
+  margin: auto;
+}
+
+#valores .overlay {
+  background-color: rgba(0, 0, 0, 0.55); /* overlay oscuro */
+  padding: 4em 1em;
+}
+
+#valores .bloques {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+#valores .bloque {
+  max-width: 300px;
+}
+
+#valores h3 {
+  margin-bottom: 0.5em;
+  color: #FBC02D;
+}
+
+#valores ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#valores li {
+  margin: 0.5em 0;
+}
+
+
+/* ----------------------------------------
+   FOOTER ESTILO SHAKE SHACK PERSONALIZADO
+---------------------------------------- */
+/* FOOTER BASE */
+footer {
+  background-color: #212121;
+  color: #FFFFFF;
+  padding: 3em 1em 1.5em;
+  font-size: 0.95em;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.footer-column h3 {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  color: #FBC02D;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5em;
+}
+
+.footer-column ul li a {
+  color: #CCCCCC;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #FFFFFF;
+}
+
+/* APP BADGES */
+.app-badges img {
+  max-width: 140px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.app-badges img:hover {
+  transform: scale(1.05);
+}
+
+/* NEWSLETTER FORM */
+.newsletter-form {
+  display: flex;
+  margin-top: 1em;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.5em;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 0.95em;
+}
+
+.newsletter-form button {
+  padding: 0.5em 1em;
+  background-color: #B71C1C;
+  border: none;
+  color: #FFFFFF;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #FBC02D;
+  color: #212121;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  display: flex;
+  gap: 1em;
+  margin-top: 1.5em;
+}
+
+.social-icons a {
+  color: #CCCCCC;
+  font-size: 1.4em;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #FBC02D;
+}
+
+/* BOTTOM LINE */
+.footer-bottom {
+  border-top: 1px solid #444;
+  text-align: center;
+  margin-top: 2em;
+  padding-top: 1em;
+  font-size: 0.9em;
+  color: #AAAAAA;
+}

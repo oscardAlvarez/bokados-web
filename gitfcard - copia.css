@@ -1,0 +1,655 @@
+/* ---------------------------------------- 
+   GLOBAL RESET & BASE
+---------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FAFAFA;
+  color: #212121;
+  line-height: 1.6;
+}
+
+/* ----------------------------------------
+   NAVBAR
+---------------------------------------- */
+nav {
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1em 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  list-style: none;
+}
+
+nav a {
+  color: #212121;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #B71C1C;
+}
+
+/* ----------------------------------------
+   BOTONES GENERALES
+---------------------------------------- */
+.btn {
+  display: inline-block;
+  background-color: #B71C1C;
+  color: #FFFFFF;
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #FBC02D;
+  color: #212121;
+}
+
+/* ----------------------------------------
+   HERO ESTILO SHAKE SHACK
+---------------------------------------- */
+#hero {
+  background-color: #FAFAFA;
+  padding: 3em 1em;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.hero-text-box {
+  background-color: #212121;
+  color: #FFFFFF;
+  padding: 2em;
+  max-width: 500px;
+  flex: 1 1 300px;
+}
+
+.hero-text-box h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero-text-box .special,
+.hero-text-box span {
+  color: #FBC02D;
+}
+
+.hero-text-box p {
+  margin-bottom: 1em;
+}
+
+.hero-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* ----------------------------------------
+   FOOTER ESTILO BOKADOS
+---------------------------------------- */
+footer {
+  background-color: #212121;
+  color: #FFFFFF;
+  padding: 3em 1em 1.5em;
+  font-size: 0.95em;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.footer-column h3 {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  color: #FBC02D;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5em;
+}
+
+.footer-column ul li a {
+  color: #CCCCCC;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #FFFFFF;
+}
+
+.app-badges img {
+  max-width: 140px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.app-badges img:hover {
+  transform: scale(1.05);
+}
+
+.newsletter-form {
+  display: flex;
+  margin-top: 1em;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.5em;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 0.95em;
+}
+
+.newsletter-form button {
+  padding: 0.5em 1em;
+  background-color: #B71C1C;
+  border: none;
+  color: #FFFFFF;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #FBC02D;
+  color: #212121;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1em;
+  margin-top: 1.5em;
+}
+
+.social-icons a {
+  color: #CCCCCC;
+  font-size: 1.4em;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #FBC02D;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  text-align: center;
+  margin-top: 2em;
+  padding-top: 1em;
+  font-size: 0.9em;
+  color: #AAAAAA;
+}
+
+/* ----------------------------------------
+   NUEVAS SECCIONES PARA TARJETAS.HTML
+---------------------------------------- */
+
+/* Intro / Explicativo */
+#intro {
+  background-color: #FFF8E1;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+#intro h2 {
+  color: #B71C1C;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+
+#intro p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #212121;
+  line-height: 1.6;
+}
+
+/* Opciones de Tarjetas */
+#opciones {
+  background-color: #FAFAFA;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+#opciones h2 {
+  color: #B71C1C;
+  margin-bottom: 1em;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+.gift-card {
+  background-color: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  border-radius: 10px;
+  padding: 1.5em;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.gift-card:hover {
+  transform: translateY(-5px);
+}
+
+.gift-card img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+.gift-card h3 {
+  color: #212121;
+  margin-bottom: 0.5em;
+}
+
+.gift-card p {
+  color: #666666;
+  margin-bottom: 1em;
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  max-width: 800px;
+  margin: 2em auto;
+  border-collapse: collapse;
+  background-color: #FFFFFF;
+  border: 1px solid #EEEEEE;
+}
+
+table th {
+  background-color: #B71C1C;
+  color: #FFFFFF;
+  padding: 0.75em;
+  text-align: left;
+}
+
+table td {
+  padding: 0.75em;
+  border-bottom: 1px solid #EEEEEE;
+  color: #212121;
+}
+
+table tr:nth-child(even) {
+  background-color: #FAFAFA;
+}
+
+/* Como funciona */
+#como-funciona {
+  background-color: #FAFAFA;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+#como-funciona h2 {
+  color: #B71C1C;
+  margin-bottom: 0.5em;
+}
+
+#como-funciona ol {
+  max-width: 600px;
+  margin: 1em auto;
+  text-align: left;
+  line-height: 1.8;
+  color: #212121;
+}
+
+/* Promo */
+#promo {
+  background-color: #B71C1C;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+#promo h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+#promo p {
+  font-size: 1.2em;
+}
+
+/* Testimonios */
+#testimonios {
+  background-color: #FFF8E1;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+#testimonios h2 {
+  color: #B71C1C;
+  margin-bottom: 1em;
+}
+
+#testimonios blockquote {
+  max-width: 600px;
+  margin: 1em auto;
+  font-style: italic;
+  color: #212121;
+  border-left: 4px solid #FBC02D;
+  padding-left: 1em;
+}
+
+/* FAQ */
+#faq {
+  background-color: #FFF8E1;
+  max-width: 800px;
+  margin: auto;
+  padding: 2em 1em;
+}
+
+#faq h2 {
+  text-align: center;
+  color: #B71C1C;
+  margin-bottom: 1em;
+}
+
+#faq details {
+  background-color: #FFFFFF;
+  margin-bottom: 1em;
+  padding: 1em;
+  border: 1px solid #EEEEEE;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#faq details summary {
+  font-weight: bold;
+  color: #212121;
+}
+
+#faq details[open] {
+  background-color: #FAFAFA;
+}
+
+/* Formulario de Envío */
+/* ----------------------------------------
+   FORMULARIO DE ENVÍO (ESTILO MEJORADO)
+---------------------------------------- */
+#formulario {
+  background-color: #FFF8E1;
+  padding: 3em 1em;
+}
+
+#formulario h2 {
+  color: #B71C1C;
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+
+#formulario p.intro {
+  max-width: 600px;
+  margin: 0 auto 2em;
+  text-align: center;
+  color: #212121;
+  font-size: 1em;
+}
+
+#formulario form {
+  background-color: #FFFFFF;
+  max-width: 600px;
+  margin: auto;
+  padding: 2.5em 2em;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+#formulario label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #212121;
+}
+
+#formulario input,
+#formulario textarea {
+  width: 100%;
+  padding: 0.85em 1em;
+  margin-bottom: 1.5em;
+  border: 1px solid #CCCCCC;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#formulario input:focus,
+#formulario textarea:focus {
+  border-color: #FBC02D;
+  box-shadow: 0 0 5px rgba(251,192,45,0.4);
+  outline: none;
+}
+
+#formulario button {
+  background-color: #B71C1C;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.85em 2em;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+#formulario button:hover {
+  background-color: #FBC02D;
+  color: #212121;
+}
+
+
+/* Video */
+#video {
+  background-color: #FFF8E1;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+#video h2 {
+  color: #B71C1C;
+  margin-bottom: 1em;
+}
+
+#video video {
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Lista de Locales */
+#locales {
+  background-color: #FAFAFA;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+#locales h2 {
+  color: #B71C1C;
+  margin-bottom: 1em;
+}
+
+#locales ul {
+  list-style: none;
+  padding: 0;
+}
+
+#locales ul li {
+  padding: 0.5em;
+  color: #212121;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+#locales ul li:last-child {
+  border-bottom: none;
+}
+/* ----------------------------------------
+   FOOTER ESTILO BOKADOS
+---------------------------------------- */
+footer {
+  background-color: #212121;
+  color: #FFFFFF;
+  padding: 3em 1em 1.5em;
+  font-size: 0.95em;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.footer-column h3 {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  color: #FBC02D;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5em;
+}
+
+.footer-column ul li a {
+  color: #CCCCCC;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #FFFFFF;
+}
+
+.app-badges img {
+  max-width: 140px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.app-badges img:hover {
+  transform: scale(1.05);
+}
+
+.newsletter-form {
+  display: flex;
+  margin-top: 1em;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.5em;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 0.95em;
+}
+
+.newsletter-form button {
+  padding: 0.5em 1em;
+  background-color: #B71C1C;
+  border: none;
+  color: #FFFFFF;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #FBC02D;
+  color: #212121;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1em;
+  margin-top: 1.5em;
+}
+
+.social-icons a {
+  color: #CCCCCC;
+  font-size: 1.4em;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #FBC02D;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  text-align: center;
+  margin-top: 2em;
+  padding-top: 1em;
+  font-size: 0.9em;
+  color: #AAAAAA;
+}

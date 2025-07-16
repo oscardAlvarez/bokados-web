@@ -1,0 +1,854 @@
+/* --- RESET GENERAL --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FAFAFA;
+  color: #212121;
+  line-height: 1.6;
+}
+
+/* --- NAV --- */
+/* ----------------------------------------
+   NAVBAR NUEVO ESTILO SHAKE SHACK
+---------------------------------------- */
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 0.5em 1em;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo img {
+  height: 60px;
+  width: auto;
+  border-radius: 8px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  color: #212121;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #B71C1C;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.navbar-actions i {
+  font-size: 1.4em;
+  color: #212121;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-actions i:hover {
+  color: #B71C1C;
+}
+
+.signin-button {
+  padding: 0.5em 1em;
+  border: 2px solid #B71C1C;
+  border-radius: 25px;
+  color: #B71C1C;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.signin-button:hover {
+  background-color: #B71C1C;
+  color: #ffffff;
+}
+
+.order-now {
+  padding: 0.5em 1.2em;
+  background-color: #eb3119;
+  color: #ffffff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.order-now:hover {
+  background-color: #ec1c15;
+}
+
+/* --- VIDEO DE FONDO --- */
+.fondo-video {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fondo-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.texto-encima {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  text-align: center;
+  z-index: 1;
+}
+
+.texto-encima h1 {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.texto-encima p {
+  font-size: 1.2em;
+}
+
+/* --- TEXTO EXTRA --- */
+.texto-extra {
+  background-color: rgba(50, 50, 50, 0.0);
+  color: #000000;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 900px;
+  text-align: center;
+}
+
+
+
+/* --- BLOQUE STARBUCKS 3 PROMOS --- */
+.promos-estrella {
+  max-width: 1200px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.promo {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #FDFDFD;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.promo:nth-child(odd) {
+  background-color: #F5E6E8;
+}
+
+.promo:nth-child(even) {
+  background-color: #E8F5F3;
+}
+
+.promo-texto, .promo-imagen {
+  flex: 1 1 300px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.promo-texto h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #B71C1C;
+}
+
+.promo-texto p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.boton-promo {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #B71C1C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.boton-promo:hover {
+  background-color: #FBC02D;
+  color: #212121;
+}
+
+.promo-imagen img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* --- BLOQUE DUNKIN 3 SECCIONES --- */
+.productos-destacados {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.productos-destacados h2 {
+  margin: 40px 0 20px;
+  font-size: 1.8em;
+  color: #B71C1C;
+  text-align: left;
+}
+
+.productos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.producto {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.producto h3 {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #212121;
+}
+
+.producto p {
+  color: #B71C1C;
+  font-weight: bold;
+}
+
+.producto a {
+  display: block;
+  margin: 10px auto 20px;
+  padding: 8px 16px;
+  background-color: #B71C1C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  width: 120px;
+  transition: background-color 0.3s;
+}
+
+.producto a:hover {
+  background-color: #FBC02D;
+  color: #212121;
+}
+
+/* --- BLOQUE DELIVERY / RETIRO (2 columnas pastel) --- */
+.bloque-delivery-retiro {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 60px 0;
+}
+
+.opcion-delivery, .opcion-retiro {
+  flex: 1 1 300px;
+  padding: 40px 20px;
+  text-align: center;
+  color: #212121;
+}
+
+.opcion-delivery {
+  background-color: #FBE8E7;
+}
+
+.opcion-retiro {
+  background-color: #E7F2FB;
+}
+
+.bloque-delivery-retiro h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #B71C1C;
+}
+
+.bloque-delivery-retiro p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.bloque-delivery-retiro a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #B71C1C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.bloque-delivery-retiro a:hover {
+  background-color: #FBC02D;
+  color: #212121;
+}
+
+/* --- BANNER VIDEO FULL WIDTH --- */
+.banner-video {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+
+/* --- FOOTER --- */
+/* ----------------------------------------
+   FOOTER ESTILO SHAKE SHACK PERSONALIZADO
+---------------------------------------- */
+/* FOOTER BASE */
+footer {
+  background-color: #212121;
+  color: #FFFFFF;
+  padding: 3em 1em 1.5em;
+  font-size: 0.95em;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.footer-column h3 {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  color: #FBC02D;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5em;
+}
+
+.footer-column ul li a {
+  color: #CCCCCC;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #FFFFFF;
+}
+
+.app-badges img:hover {
+  transform: scale(1.05);
+}
+
+.newsletter-form {
+  display: flex;
+  margin-top: 1em;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.5em;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 0.95em;
+}
+
+
+
+
+.newsletter-form button {
+  padding: 0.5em 1em;
+  background-color: #B71C1C;
+  border: none;
+  color: #FFFFFF;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #FBC02D;
+  color: #212121;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1em;
+  margin-top: 1.5em;
+}
+
+.social-icons a {
+  color: #CCCCCC;
+  font-size: 1.4em;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #FBC02D;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  text-align: center;
+  margin-top: 2em;
+  padding-top: 1em;
+  font-size: 0.9em;
+  color: #AAAAAA;
+}
+/* --- SECCIONES ESTILO STARBUCKS - 4 BLOQUES --- */
+.bloques-starbucks {
+  max-width: 1200px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.bloque {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.bloque:nth-child(1) {
+  background-color: #DCE7D3;
+}
+.bloque:nth-child(2) {
+  background-color: #FDE5C8;
+}
+.bloque:nth-child(3) {
+  background-color: #E2EAF5;
+}
+.bloque:nth-child(4) {
+  background-color: #F8D9DA;
+}
+
+.bloque-texto, .bloque-imagen {
+  flex: 1 1 500px;
+  padding: 40px;
+}
+
+.bloque-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bloque-texto h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #B71C1C;
+}
+
+.bloque-texto p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.bloque-texto a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #B71C1C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.bloque-texto a:hover {
+  background-color: #FBC02D;
+  color: #212121;
+}
+
+.bloque-imagen img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+
+/* --- BLOQUES STARBUCKS NUEVOS (4 SECCIONES) --- */
+.bloques-starbucks {
+  max-width: 1200px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.bloque {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.bloque:nth-child(1) {
+  background-color: #DCE7D3;
+}
+.bloque:nth-child(2) {
+  background-color: #FDE5C8;
+}
+.bloque:nth-child(3) {
+  background-color: #E2EAF5;
+}
+.bloque:nth-child(4) {
+  background-color: #F8D9DA;
+}
+
+.bloque-texto, .bloque-imagen {
+  flex: 1 1 500px;
+  padding: 40px;
+}
+
+.bloque-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bloque-texto h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #B71C1C;
+}
+
+.bloque-texto p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.bloque-texto a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #B71C1C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.bloque-texto a:hover {
+  background-color: #FBC02D;
+  color: #212121;
+}
+
+.bloque-imagen img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* --- PRODUCTOS DESTACADOS (DUNKIN STYLE) --- */
+.productos-destacados {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.productos-destacados h2 {
+  margin: 40px 0 20px;
+  font-size: 1.8em;
+  color: #B71C1C;
+  text-align: left;
+}
+
+.productos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.producto {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.producto h3 {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #212121;
+}
+
+.producto p {
+  color: #B71C1C;
+  font-weight: bold;
+}
+
+.producto a {
+  display: block;
+  margin: 10px auto 20px;
+  padding: 8px 16px;
+  background-color: #B71C1C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  width: 120px;
+  transition: background-color 0.3s;
+}
+
+.producto a:hover {
+  background-color: #FBC02D;
+  color: #212121;
+}
+
+
+/* --- BLOQUES STARBUCKS NUEVOS (4 SECCIONES) --- */
+.bloques-starbucks {
+  max-width: 1200px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.bloque {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.bloque:nth-child(1) {
+  background-color: #DCE7D3;
+}
+.bloque:nth-child(2) {
+  background-color: #FDE5C8;
+}
+.bloque:nth-child(3) {
+  background-color: #E2EAF5;
+}
+.bloque:nth-child(4) {
+  background-color: #F8D9DA;
+}
+
+.bloque-texto, .bloque-imagen {
+  flex: 1 1 500px;
+  padding: 40px;
+}
+
+.bloque-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bloque-texto h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #B71C1C;
+}
+
+.bloque-texto p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.bloque-texto a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #B71C1C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.bloque-texto a:hover {
+  background-color: #FBC02D;
+  color: #212121;
+}
+
+.bloque-imagen video,
+.bloque-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 400px;
+  border-radius: 8px;
+}
+
+
+/* --- PRODUCTOS DESTACADOS (DUNKIN STYLE) --- */
+.productos-destacados {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.productos-destacados h2 {
+  margin: 40px 0 20px;
+  font-size: 1.8em;
+  color: #B71C1C;
+  text-align: left;
+}
+
+.productos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.producto {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.producto h3 {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #212121;
+}
+
+.producto p {
+  color: #B71C1C;
+  font-weight: bold;
+}
+
+.producto a {
+  display: block;
+  margin: 10px auto 20px;
+  padding: 8px 16px;
+  background-color: #B71C1C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  width: 120px;
+  transition: background-color 0.3s;
+}
+
+.producto a:hover {
+  background-color: #FBC02D;
+  color: #212121;
+}
